@@ -51,6 +51,7 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
+    'check.session.ip'
 ])->group(function () {
     Route::get('/dashboard', [RoundController::class, 'index'])->name('user.level');
 });

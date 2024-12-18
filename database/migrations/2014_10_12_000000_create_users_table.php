@@ -18,6 +18,8 @@ return new class extends Migration
             $table->timestamp('registration_date')->nullable();
             $table->string('password')->nullable();
             $table->integer('points')->default(0)->nullable();
+            $table->string('session_id')->nullable();
+            $table->string('last_ip')->nullable();
             $table->timestamps();
         });
     }
