@@ -1,0 +1,515 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00c2e7;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+    background-color: white;
+    /* border-radius: 1% 1% 0 0; */
+    width: 100%; /* max-width: 400px; */
+    text-align: center;
+    padding: 30px 20px;
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    overflow-x: hidden;
+}
+
+.container-fluid3 {
+    background-color: white;
+    /* border-radius: 1% 1% 0 0; */
+    width: 100%; /* max-width: 400px; */
+    text-align: center;
+    /* padding: 30px 20px; */
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    overflow-x: hidden;
+}
+.container-fluid4 {
+    /* border-radius: 1% 1% 0 0; */
+    width: 100%;
+    /* max-width: 400px; */
+    text-align: center;
+    /* padding: 30px 20px; */
+    position: absolute;
+    bottom: 0;
+    top: 3%;
+}
+.container-login {
+    display: flex;
+    position: relative;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; Tetapkan logo di bagian atas layar */
+    /* transform: translateX(-50%); Koreksi posisi agar tepat di tengah */
+    z-index: 10; /* Pastikan logo berada di atas elemen lainnya */
+    width: 100%; /* Atur lebar tempat logo */
+    margin-top: 1rem;
+    position: absolute;
+    top: 0;
+    img {
+        width: 20rem;
+    }
+}
+.btn2 {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(54, 41, 183, 1);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.custom-shadow {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8); /* Shadow dengan ukuran dan warna kustom */
+}
+
+.logos img {
+    max-width: 80px;
+    margin: 0 10px;
+}
+.title {
+    font-family: "Arial", sans-serif;
+    font-size: 2rem;
+    color: #0000ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #0000ff;
+    margin: 20px 0;
+}
+.btn-start {
+    background-color: #0000ff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btn-start:hover {
+    background-color: #3333ff;
+}
+.btn {
+    width: 15rem;
+    height: 3rem;
+    background-color: rgba(54, 41, 183, 1);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: rgba(54, 41, 183, 1);
+    font-weight: bold;
+    text-shadow: 0px 1px 5px #0000008c;
+    margin: 20px 0;
+}
+.form-select {
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 5px 0px rgba(122, 122, 122, 0.75);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(122, 122, 122, 0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(122, 122, 122, 0.75);
+}
+.form-control {
+    height: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 5px 0px rgba(122, 122, 122, 0.75);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(122, 122, 122, 0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(122, 122, 122, 0.75);
+}
+.button {
+    width: 15rem;
+    background-color: rgba(54, 41, 183, 1);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.btn-welcome {
+    align-items: center;
+    width: 15rem;
+    background-color: rgba(54, 41, 183, 1);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.btn-welcome:hover {
+    background-color: rgb(114, 106, 208);
+    color: white;
+}
+
+.form-select:focus {
+    border-color: #3629b7;
+    box-shadow: 0 0 0 0.25rem rgba(54, 41, 183, 0.25);
+}
+.btn-start2 {
+    background-color: #fff;
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #808080; /* Border abu-abu */
+}
+
+.btn-start2:hover {
+    background-color: #3629b7;
+    color: white;
+}
+.rounded-custom {
+    border-radius: 20px;
+    border: 2px solid #808080; /* Border berwarna abu-abu */
+}
+.pilih-babak h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3629b7;
+    text-shadow: #808080 2px 2px 2px;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000;
+    font-size: 2rem;
+    color: rgba(54, 41, 183, 1);
+    font-style: normal;
+    text-shadow: 0px 1px 0px #0000008c;
+}
+.text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-30%, -30%);
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 1000;
+    font-size: 3rem;
+    color: rgba(54, 41, 183, 1);
+    font-style: normal;
+    text-shadow: 0px 1px 0px #0000008c;
+}
+.logopop {
+    position: relative;
+    z-index: 0;
+}
+.header-option {
+    width: 100%;
+    padding: 5% 5%;
+
+    .back-btn {
+        background-color: transparent;
+        user-select: none;
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        display: flex;
+        gap: 1.5rem;
+        width: fit-content;
+        cursor: pointer;
+
+        img.back-icon {
+            width: 10px;
+        }
+    }
+}
+.question {
+    height: 100vh;
+    z-index: 99999;
+    position: relative;
+}
+.container-fluid2 {
+    width: 100%;
+    height: 100%;
+    position: static;
+    background-color: #fff;
+    color: #333;
+    padding: 5% 8%;
+
+    .question-text {
+        margin: 1.5rem 0;
+        text-align: justify;
+    }
+
+    .form-answer {
+        box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 30%);
+        padding: 16px;
+        margin-bottom: 10%;
+
+        .option-answer {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            label.checkbox-answer {
+                width: 100%;
+
+                div.answer {
+                    width: 100%;
+                    background-color: #fff;
+                    color: #333;
+                    border: 1px solid #bdbdbd;
+                    font-size: 0.9rem;
+                    padding: 0.5rem;
+                    transition-duration: 200ms;
+                }
+
+                input:checked ~ div.answer {
+                    background-color: #004aad;
+                    color: #fff;
+                }
+            }
+        }
+
+        .btn-submit2 {
+            margin: 36px 0 0 0;
+            width: 100%;
+            background-color: #004aad;
+            color: #fff;
+            border: 1px solid transparent;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            transition-duration: 150ms;
+        }
+        .btn-submit2:hover {
+            background-color: #033c86;
+        }
+    }
+}
+
+/* LEADERBOARD */
+main.container-leaderboard {
+    margin: 5% 0;
+    user-select: none;
+    position: absolute;
+
+    div.title-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            color: #004aad;
+            margin: 12px 0;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        div.icon-wrapper {
+            width: fit-content;
+            height: auto;
+            aspect-ratio: 1/1;
+            border-radius: 12px;
+            box-shadow: 3px 5px 0px 0px #1d7fff;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #004aad;
+
+            .fa-award {
+                font-size: 2.3rem;
+                color: #fff;
+            }
+        }
+    }
+
+    section.winner-section {
+        height: 100%;
+        width: 100%;
+
+        .winner-board {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 8px 12px;
+            border-radius: 12px;
+            background-color: #fff;
+            padding: 24px 16px;
+
+            #winner-list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .winner:nth-child(1),
+                .winner:nth-child(2),
+                .winner:nth-child(3) {
+                    .winner-name {
+                        h4,
+                        span {
+                            color: #fff !important;
+                        }
+                    }
+
+                    .ordinal {
+                        color: #fff !important;
+                    }
+
+                    .winner-info {
+                        span {
+                            color: #fff !important;
+                        }
+                    }
+
+                    .icon {
+                        border: 1px solid transparent !important;
+                    }
+                }
+
+                .winner:nth-child(1) {
+                    background-color: #fdc311;
+                }
+
+                .winner:nth-child(2) {
+                    background-color: #7708f3;
+                }
+
+                .winner:nth-child(3) {
+                    background-color: #fe0e85;
+                }
+
+                .winner {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px;
+                    border-bottom: 1px solid #b9b9b9;
+                    border-radius: 12px;
+                    transition-duration: 150ms;
+
+                    .ordinal {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: #000;
+                    }
+
+                    .winner-name {
+                        flex: 1;
+
+                        h4 {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            margin: 0;
+                        }
+
+                        span {
+                            font-size: 0.9rem;
+                            letter-spacing: 0.02rem;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .winner-info {
+                        display: flex;
+                        justify-self: center;
+                        align-items: center;
+
+                        span {
+                            font-weight: 800;
+                            font-size: 1.2rem;
+                            padding: 8px;
+                            color: #004aad;
+                        }
+                    }
+
+                    .icon {
+                        border-radius: 9999px;
+                        width: 2.8rem;
+                        aspect-ratio: 1/1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid #c2c2c2;
+                    }
+                }
+
+                .runnerUp:hover {
+                    background-color: #f2f2f2;
+                }
+
+                .winner:nth-child(1):hover,
+                .winner:nth-child(2):hover,
+                .winner:nth-child(3):hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+/* END OF LEADERBOARD */
+
+/* loader */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.load {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px rgba(54, 41, 183, 1);
+    border-radius: 20px;
+    z-index: 9999;
+}
+.loader {
+    width: fit-content;
+    font-size: 40px;
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0000;
+    -webkit-text-stroke: 1px #000;
+    background: radial-gradient(
+                1.13em at 50% 1.6em,
+                rgba(54, 41, 183, 1) 99%,
+                #0000 101%
+            )
+            calc(50% - 1.6em) 0/3.2em 100% text,
+        radial-gradient(
+                1.13em at 50% -0.8em,
+                rgba(54, 41, 183, 1) 99%,
+                rgba(54, 41, 183, 1) 101%
+            )
+            50% 0.8em/3.2em 100% repeat-x text;
+    animation: l9 2s linear infinite;
+}
+.loader:before {
+    content: "FIK FAIR 2024";
+}
+@keyframes l9 {
+    to {
+        background-position: calc(50% + 1.6em) 0, calc(50% + 3.2em) 0.8em;
+    }
+}
+
+@keyframes lineGrow {
+    to {
+        width: 100%;
+    }
+}
+
+/* Ukuran font untuk tablet dan lebih besar */
+@media (min-width: 768px) {
+    .pilih-babak h3 {
+        font-size: 3rem; /* Ukuran font untuk tablet dan lebih besar */
+    }
+}
