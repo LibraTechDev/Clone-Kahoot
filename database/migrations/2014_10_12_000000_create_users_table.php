@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('school');
-            $table->timestamp('registration_date');
+            $table->timestamp('registration_date')->nullable();
             $table->string('password')->nullable();
             $table->integer('points')->default(0)->nullable();
             $table->timestamps();

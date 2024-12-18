@@ -13,6 +13,7 @@ use Database\Seeders\AdminSeeder; // Import AdminSeeder
 use Database\Seeders\RoundSeeder; // Import RoundSeeder
 use Database\Seeders\QuestionSeeder; // Import QuestionSeeder
 use Database\Seeders\SchoolSeeder; 
+use Database\Seeders\UserSeeder; 
 
 class DatabaseSeeder extends Seeder
 {
@@ -34,5 +35,8 @@ class DatabaseSeeder extends Seeder
 
         // Seed Questions
         $this->call(QuestionSeeder::class);
+
+        $this->call(UserSeeder::class);
+        
     }
 }
