@@ -7,6 +7,7 @@ use App\Filament\Pages\RoundSelectionPage;
 use App\Http\Controllers\SchoolsController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\LeaderboardController;
+use Filament\Facades\Filament;
 
 
 /*
@@ -34,7 +35,10 @@ Route::get('/', function () {
 
 // Route::get('/view_kelas', [AdminController::class,'view_kelas']);
 Route::get('/signup', [SchoolsController::class, 'index'])->name('user.register');
-
+// Route::middleware(['restrict.admin.login'])->group(function () {
+//     Route::get('/admin');
+//     Route::get('/admin/login');
+// });
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/popup/{roundId}', [RoundController::class, 'popup'])->name('user.popup');
     Route::post('/round/{roundId}/submit', [QuestionController::class, 'submit'])->name('user.submit');
@@ -55,3 +59,29 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', [RoundController::class, 'index'])->name('user.level');
 });
+
+// Route::prefix(config('filament.path'))->group(function () {
+//     // Cek jika halaman login sudah dikonfigurasi pada Filament
+//     Route::middleware(['restrict.admin.login'])->group(function () {
+//         if ($loginPage = config('filament.auth.pages.login')) {
+//             Route::get('admin', $loginPage)->name('auth.login');
+//         }
+//     });
+
+//     // Menggunakan middleware yang telah dikonfigurasi untuk autentikasi
+//     Route::middleware(config('filament.middleware.auth'))->group(function (): void {
+//         // Menambahkan route untuk halaman-halaman Filament
+//         Route::name('pages.')->group(function (): void {
+//             foreach (Filament::getPages() as $page) {
+//                 Route::group([], $page::getRoutes());
+//             }
+//         });
+
+//         // Menambahkan route untuk resources di Filament
+//         Route::name('resources.')->group(function (): void {
+//             foreach (Filament::getResources() as $resource) {
+//                 Route::group([], $resource::getRoutes());
+//             }
+//         });
+//     });
+// });

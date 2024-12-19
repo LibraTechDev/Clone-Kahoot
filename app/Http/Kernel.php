@@ -65,5 +65,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'check.waitingroom' => \App\Http\Middleware\CheckIfInWaitingRoom::class,
         'check.session.ip' => \App\Http\Middleware\CheckUserSessionAndIP::class,
+        'restrict.admin.login' => \App\Http\Middleware\RestrictFilamentLogin::class,
     ];
 }

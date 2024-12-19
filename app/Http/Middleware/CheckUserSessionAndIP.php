@@ -26,8 +26,6 @@ class CheckUserSessionAndIP
                         'session_id' => null,
                         'last_ip' => null,
                     ]);
-
-         
                 return redirect('/login')->withErrors('Akun Anda sedang digunakan di perangkat lain.');
             }
 
@@ -41,8 +39,6 @@ class CheckUserSessionAndIP
                         'session_id' => null,
                         'last_ip' => null,
                     ]);
-
-           
                 return redirect('/login')->withErrors('Akun Anda sedang digunakan di alamat IP lain.');
             }
 

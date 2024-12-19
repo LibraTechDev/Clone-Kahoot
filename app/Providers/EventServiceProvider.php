@@ -21,6 +21,9 @@ class EventServiceProvider extends ServiceProvider
         \Illuminate\Auth\Events\Registered::class => [
             \App\Listeners\InitializeFirstRound::class,
         ],
+        \Illuminate\Auth\Events\Logout::class => [
+            \App\Listeners\LogoutListener::class,
+        ],
     ];
 
     /**
